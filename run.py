@@ -13,7 +13,6 @@ def run():
     parser.add_argument('--stage', type=str, default='ILM', choices=['ILM', 'MWM', 'GTM'])
     parser.add_argument('--model_save_path', type=str, default='checkpoint_save_dir')
     parser.add_argument('--result_save_path', type=str, default='results_dir')
-    parser.add_argument('--target_size', type=int, default=256)
     parser.add_argument('--num_iters', type=int, default=450000)
     parser.add_argument('--model_path', type=str, default="checkpoint_dir")
     parser.add_argument('--batch_size', type=int, default=16)
@@ -22,7 +21,7 @@ def run():
     parser.add_argument('--gpu_id', type=str, default="0")
     parser.add_argument('--load_iter', type=int, default="200000")
     args = parser.parse_args()
-        
+
     os.environ["CUDA_VISIBLE_DEVICES"] = args.gpu_id
     model = GTMUST()
     if args.test:
