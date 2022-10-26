@@ -1,0 +1,1 @@
+python run.py  --test  --data_root ../datasets/viton_resize  --data_mode test  --gpu_id 0 --model_path checkpoint  --result_save_path results --load_iter 200000

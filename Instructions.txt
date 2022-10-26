@@ -1,0 +1,12 @@
+Dataset preparation:
+For training/testing dataset, our full and processed dataset is available here:
+https://drive.google.com/open?id=1MxCUvKxejnwWnoZ-KoCyMCXo3TLhRuTo
+
+Environment:
+The code is trained and tested with pytorch 1.8.0, torchvision 0.9.0, and opencv-python 4.4.0(Python 3 env).
+
+Training:
+Run as train.sh
+
+Testing:
+Run as test.sh
